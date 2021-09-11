@@ -1,6 +1,6 @@
 ![Developer](https://www.windzoon.com/images/reactjs-widnzoon.png)
 
-### *Namaste! 👋, I'm* 
+### *Namaste! 👋 I'm,* 
 # Moreshwar Dalvi
 ### Developer
 
