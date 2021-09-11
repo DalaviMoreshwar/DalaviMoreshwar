@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-<!--
-**DalviMoreshwar/DalviMoreshwar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm Moreshwar Dalvi from India, and I develop web applicatios using React JS. I really enjoy working with React JS.
 
-Here are some ideas to get you started:
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=DalviMoreshwar)](https://github.com/anuraghazra/github-readme-stats)
+
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
@@ -13,4 +13,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
