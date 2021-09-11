@@ -1,4 +1,4 @@
-![Developer](https://github.com/DalviMoreshwar/DalviMoreshwar/blob/main/banner-removebg-preview.png)
+![Developer](https://www.windzoon.com/images/reactjs-widnzoon.png)
 
 ### *Namaste! 👋, I'm* 
 # Moreshwar Dalvi
