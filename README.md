@@ -2,11 +2,11 @@
 
 ### *Namaste! 👋, I'm* 
 # Moreshwar Dalvi
-#### Developer
+### Developer
 
 I'm Moreshwar Dalvi from India, and I develop web applications using React JS. I really enjoy working with React JS.
 
-##Skills & Experiance
+### Skills & Experiance
 * REACT JS  
 * JS / HTML / CSS  
 * Node JS 
