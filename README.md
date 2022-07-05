@@ -1,4 +1,4 @@
-![Developer](https://imgr.search.brave.com/LNGfca7BK2FevYOmdeVKaMRsJ8ohlbF9SVJYtCJrWXo/fit/680/428/ce/1/aHR0cHM6Ly9taXJv/Lm1lZGl1bS5jb20v/bWF4LzEzNjAvMCpn/cU8zc2xMbUdiNG1V/ZWplLmdpZg.gif)
+![Developer](https://pbs.twimg.com/profile_banners/1432578951688310789/1655099852/600x200)
 
 ### *Namaste! 👋 I'm,* 
 # Moreshwar Dalvi
