@@ -1,4 +1,4 @@
-![Developer](https://pbs.twimg.com/profile_banners/1432578951688310789/1655099852/600x200)
+![Developer](https://www.canva.com/design/DAFCFXC_xb0/Gli9FnBdj7CLvymYQkrZvw/edit?utm_content=DAFCFXC_xb0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### *Namaste! 👋 I'm,* 
 # Moreshwar Dalvi
