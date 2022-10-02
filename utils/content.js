@@ -21,7 +21,7 @@ export const socials = [
     icon: <BsGithub  />
   },
   {
-    id: 3,
+    id: 4,
     url: "mailto:moreshwardlv@gmail.com",
     icon: <SiGmail  />
   },

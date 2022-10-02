@@ -83,11 +83,8 @@ const renderSkills = (skills, level) => (
     <p className="uppercase text-sm py-8 font-bold">{level}</p>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {skills.map((skill, index) => (
-        <>
-          <div
-            key={index}
-            className="p-2 shadow-md dark:shadow-purple-300 dark:bg-gray-800  rounded-xl"
-          >
+        <div key={index}>
+          <div className="p-2 shadow-md dark:shadow-purple-300 dark:bg-gray-800  rounded-xl">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
@@ -110,26 +107,26 @@ const renderSkills = (skills, level) => (
                   skill.level === "Beginner"
                     ? "2px solid #dcc400"
                     : skill.level === "Intermediate"
-                      ? "2px solid #007672"
-                      : "#FFE0FF",
+                    ? "2px solid #007672"
+                    : "#FFE0FF",
                 background:
                   skill.level === "Beginner"
                     ? "#fffdf0"
                     : skill.level === "Intermediate"
-                      ? "#f4ffff"
+                    ? "#f4ffff"
                     : "#FFE0FF",
                 color:
                   skill.level === "Beginner"
                     ? "#dcc400"
                     : skill.level === "Intermediate"
-                      ? "#007672"
+                    ? "#007672"
                     : "#FFE0FF",
               }}
             >
               {skill.level}
             </small>
           </div>
-        </>
+        </div>
       ))}
     </div>
   </>
