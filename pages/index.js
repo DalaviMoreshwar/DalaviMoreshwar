@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
-import { socials } from "./utils/content";
+import { socials } from "../utils/content";
 import developer from "../public/developer.png";
 
 import { useState } from "react";

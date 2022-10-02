@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { projectsDetails } from "../pages/utils/content"
+import { projectsDetails } from "../utils/content"
 import { BsGithub, BsLaptop } from 'react-icons/bs'
 
 const Projects = () => {

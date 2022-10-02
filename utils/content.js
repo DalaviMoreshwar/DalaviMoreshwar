@@ -1,8 +1,8 @@
 import {  BsGithub } from 'react-icons/bs'
 import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai'
-import crypotTransfer from '../../public/projects/crypto-transfer.png'
-import crypotDash_1 from '../../public/projects/crypto-currency-dashboard-1.png'
-import crypotDash_2 from '../../public/projects/crypto-currency-dashboard-2.png'
+import crypotTransfer from '../public/projects/crypto-transfer.png'
+import crypotDash_1 from '../public/projects/crypto-currency-dashboard-1.png'
+import crypotDash_2 from '../public/projects/crypto-currency-dashboard-2.png'
 import { SiGmail } from 'react-icons/si'
 export const socials = [
   {
