@@ -2,6 +2,16 @@ import React from "react";
 import Image from "next/image";
 import javascript from "../public/assets/skills/javascript.png";
 import node from "../public/assets/skills/node.png";
+import react from "../public/assets/skills/react.png";
+import bootstrap from "../public/assets/skills/bootstrap.png";
+import antd from "../public/assets/skills/antd.png";
+import tailwind from "../public/assets/skills/tailwind.png";
+import nextjs from "../public/assets/skills/nextjs.png";
+import github from "../public/assets/skills/github.png";
+import solidity from "../public/assets/skills/solidity.png";
+import hardhat from "../public/assets/skills/hardhat.png";
+import ethers_js_blue from "../public/assets/skills/ethers_js_blue.png";
+import web3js from "../public/assets/skills/web3js.png";
 
 const fundamentals = [
   // {
@@ -26,32 +36,32 @@ const fundamentals = [
 
 const web2 = [
   {
-    skillIcon: "../public/assets/skills/react.png",
+    skillIcon: react,
     skillName: "React JS",
     level: "Intermediate",
   },
   {
-    skillIcon: "../public/assets/skills/bootstrap.png",
+    skillIcon: bootstrap,
     skillName: "Bootstrap",
     level: "Intermediate",
   },
   {
-    skillIcon: "../public/assets/skills/antd.png",
+    skillIcon: antd,
     skillName: "Ant Design",
     level: "Intermediate",
   },
   {
-    skillIcon: "../public/assets/skills/tailwind.png",
+    skillIcon: tailwind,
     skillName: "Tailwind",
     level: "Beginner",
   },
   {
-    skillIcon: "../public/assets/skills/nextjs.png",
+    skillIcon: nextjs,
     skillName: "Next JS",
     level: "Beginner",
   },
   {
-    skillIcon: "../public/assets/skills/github.png",
+    skillIcon: github,
     skillName: "Git",
     level: "Intermediate",
   },
@@ -59,22 +69,22 @@ const web2 = [
 
 const web3 = [
   {
-    skillIcon: "../public/assets/skills/solidity.png",
+    skillIcon: solidity,
     skillName: "Solidity",
     level: "Beginner",
   },
   {
-    skillIcon: "../public/assets/skills/hardhat.png",
+    skillIcon: hardhat,
     skillName: "Hardhat",
     level: "Beginner",
   },
   {
-    skillIcon: "../public/assets/skills/ethers_js_blue.png",
+    skillIcon: ethers_js_blue,
     skillName: "Ethers Js",
     level: "Beginner",
   },
   {
-    skillIcon: "../public/assets/skills/web3js.png",
+    skillIcon: web3js,
     skillName: "Web3JS",
     level: "Beginner",
   },
