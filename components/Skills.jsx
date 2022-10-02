@@ -3,20 +3,20 @@ import Image from "next/image";
 
 const fundamentals = [
   // {
-  //   skillIcon: "/../public/assets/skills/html.png",
+  //   skillIcon: "../public/assets/skills/html.png",
   //   skillName: "HTML",
   // },
   // {
-  //   skillIcon: "/../public/assets/skills/css.png",
+  //   skillIcon: "../public/assets/skills/css.png",
   //   skillName: "CSS",
   // },
   {
-    skillIcon: "/../public/assets/skills/javascript.png",
+    skillIcon: "../public/assets/skills/javascript.png",
     skillName: "JavaScript",
     level: "Intermediate",
   },
   {
-    skillIcon: "/../public/assets/skills/node.png",
+    skillIcon: "../public/assets/skills/node.png",
     skillName: "Node JS",
     level: "Beginner",
   },
@@ -24,32 +24,32 @@ const fundamentals = [
 
 const web2 = [
   {
-    skillIcon: "/../public/assets/skills/react.png",
+    skillIcon: "../public/assets/skills/react.png",
     skillName: "React JS",
     level: "Intermediate",
   },
   {
-    skillIcon: "/../public/assets/skills/bootstrap.png",
+    skillIcon: "../public/assets/skills/bootstrap.png",
     skillName: "Bootstrap",
     level: "Intermediate",
   },
   {
-    skillIcon: "/../public/assets/skills/antd.png",
+    skillIcon: "../public/assets/skills/antd.png",
     skillName: "Ant Design",
     level: "Intermediate",
   },
   {
-    skillIcon: "/../public/assets/skills/tailwind.png",
+    skillIcon: "../public/assets/skills/tailwind.png",
     skillName: "Tailwind",
     level: "Beginner",
   },
   {
-    skillIcon: "/../public/assets/skills/nextjs.png",
+    skillIcon: "../public/assets/skills/nextjs.png",
     skillName: "Next JS",
     level: "Beginner",
   },
   {
-    skillIcon: "/../public/assets/skills/github.png",
+    skillIcon: "../public/assets/skills/github.png",
     skillName: "Git",
     level: "Intermediate",
   },
@@ -57,22 +57,22 @@ const web2 = [
 
 const web3 = [
   {
-    skillIcon: "/../public/assets/skills/solidity.png",
+    skillIcon: "../public/assets/skills/solidity.png",
     skillName: "Solidity",
     level: "Beginner",
   },
   {
-    skillIcon: "/../public/assets/skills/hardhat.png",
+    skillIcon: "../public/assets/skills/hardhat.png",
     skillName: "Hardhat",
     level: "Beginner",
   },
   {
-    skillIcon: "/../public/assets/skills/ethers_js_blue.png",
+    skillIcon: "../public/assets/skills/ethers_js_blue.png",
     skillName: "Ethers Js",
     level: "Beginner",
   },
   {
-    skillIcon: "/../public/assets/skills/web3js.png",
+    skillIcon: "../public/assets/skills/web3js.png",
     skillName: "Web3JS",
     level: "Beginner",
   },
@@ -91,7 +91,7 @@ const renderSkills = (skills, level) => (
                   src={skill.skillIcon}
                   width="64px"
                   height="64px"
-                  alt="/"
+                  alt={skill.skillName}
                 />
               </div>
               <div className="flex text-gray-600 dark:text-[#ccc] flex-col itmes-center justify-center">
