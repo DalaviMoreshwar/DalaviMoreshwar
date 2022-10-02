@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import javascript from "../public/assets/skills/javascript.png";
+import node from "../public/assets/skills/node.png";
 
 const fundamentals = [
   // {
@@ -11,12 +13,12 @@ const fundamentals = [
   //   skillName: "CSS",
   // },
   {
-    skillIcon: "../public/assets/skills/javascript.png",
+    skillIcon: javascript,
     skillName: "JavaScript",
     level: "Intermediate",
   },
   {
-    skillIcon: "../public/assets/skills/node.png",
+    skillIcon: node,
     skillName: "Node JS",
     level: "Beginner",
   },
