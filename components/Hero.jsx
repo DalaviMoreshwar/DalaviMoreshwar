@@ -46,7 +46,7 @@ const Hero = () => {
 
         <div className="flex justify-center">
           
-          <span onClick={downloadPDF} className="cursor-pointer bg-gradient-to-br from-sky-600 to-rose-600 p-2 shadow-inner my-5 mx-4 rounded-lg text-white flex">
+          <span onClick={downloadPDF} className="cursor-pointer bg-gradient-to-bl from-fuchsia-800 to-sky-500 p-2 shadow-inner my-5 mx-4 rounded-lg text-white flex">
             <span>Get My Resume</span> <BsDownload className="ml-3 mt-1" />
           </span>
         </div>
