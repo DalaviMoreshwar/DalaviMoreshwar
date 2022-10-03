@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import { socials } from "../utils/content";
-import developer from "../public/developer.png";
 
 import { useState } from "react";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import About from "../components/About";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,39 +25,7 @@ export default function Home() {
 
           <Navbar darkMode={darkMode} setDarkMode={ setDarkMode} />      
 
-          <div className="text-center p-5">
-            <p className="uppercase tracking-widest dark:text-gray-400 text-gray-600">
-              LET&#39;S DO SOMETHING TOGETHER
-            </p>
-            <h1 className="py-4 text-5xl font-semibold drop-shadow-lg text-gray-700 dark:text-gray-400">
-              Hello 🙋‍♂️, I&#39;m{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-purple-800 to-rose-600">
-                Moreshwar Dalvi
-              </span>
-            </h1>
-            <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-200">
-              a Developer 🧑‍💻
-            </h3>
-            <code className="text-xl bg-slate-200 p-3 rounded py-1 text-gray-800">
-              Web 2.0 + 1.0;
-            </code>
-            <p className="text-md  leading-7 pt-5 text-gray-700 dark:text-gray-400">
-              I&apos;m a front-end developer specializing in building
-              exceptional degital experiences. <br /> Currently, I&apos;m
-              focusing on building responsive and fully functional front-end web
-              applications while learning web 3.0 technologies.
-            </p>
-          </div>
-          {/* image section start */}
-          <div className="mx-auto bg-gradient-to-tr from-purple-700 to-rose-400 rounded-full w-80 h-80 relative overflow-hidden md:h-60 md:w-60">
-            <Image
-              src={developer}
-              alt="developer"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          {/* image section end */}
+          <Hero />
 
           {/* social section start */}
           <div className="text-3xl flex justify-center gap-12 pt-9 py-5 text-gray-700 dark:text-purple-400">
@@ -75,34 +44,13 @@ export default function Home() {
         </section>
         {/* hero section end */}
 
-        {/* about section start */}
-        <section>
-          <p className="text-xl my-10 tracking-widest uppercase text-purple-500">
-            about me
-          </p>
-          <p className="text-md py-5 leading-8 text-gray-600 dark:text-gray-400">
-            As an IT professional with over{" "}
-            <span className="text-purple-500">5.7 years of experience</span>, I
-            work as a software developer. Currently, I am employed by Acclivis
-            Technologies Pune, India. Along with my understanding of{" "}
-            <span className="text-purple-500">React JS</span> and{" "}
-            <span className="text-purple-500">Redux</span>, I have a little bit
-            of knowledge of <span className="text-purple-500">NodeJS</span>. My
-            goal is to upgrade my skill sets as an individual by pushing the
-            boundaries. With confidence and friendliness, I am able to work well
-            both independently and collaboratively. I am excited to learn about
-            the latest technologies on the market. I have already developed a
-            good knowledge of{" "}
-            <span className="text-purple-500">Web 3.0 technologies</span>. The
-            next step would be to gain more expertise in these technologies.
-          </p>
-        </section>
-        {/* about section end */}
-
+        <About />
 
         <Skills />
 
         <Projects />
+
+        
         <div className="w-full mx-auto py-4 flex justify-center text-gray-900 dark:text-slate-100 text-lg font-bold h-32">
           {/* social section start */}
           <div className="text-3xl flex justify-center gap-12 py-5 text-gray-700 dark:text-purple-400">
