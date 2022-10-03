@@ -10,7 +10,7 @@ const Projects = () => {
       <div id="projects" className="w-full my-10">
         <div className="max-w-[1240px] mx-auto px-2 py-16">
           <p className="text-xl tracking-widest uppercase text-purple-500">
-            Projects
+            My Recent Work
           </p>
           <h2 className="py-4 text-gray-500">What I Built</h2>
           <div className="grid md:grid-cols-3 gap-8 ">
@@ -50,16 +50,15 @@ const Projects = () => {
                     </span>
                   </div>
 
-                  <hr className="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" />
-                  {project.tags.map((tag, index) => (
-                    <div key={index}>
-                      <code className="row-span-3 col-span-2">
-                        <span className="bg-[#ccc] p-1 text-sm  rounded  text-gray-800">
+                  {/* <hr className="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" /> */}
+                  
+                    {/* {project.tags.map((tag, index) => (
+                      <div key={index} className="row-span-3 col-span-2">
+                        <code className="bg-[#F1F7F7] border p-1 text-sm  rounded  text-gray-800">
                           {tag}
-                        </span>
-                      </code>{" "}
-                    </div>
-                  ))}
+                        </code>{" "}
+                      </div>
+                    ))} */}
                 </div>
               </div>
             ))}

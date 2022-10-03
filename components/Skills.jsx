@@ -8,6 +8,7 @@ import antd from "../public/assets/skills/antd.png";
 import tailwind from "../public/assets/skills/tailwind.png";
 import nextjs from "../public/assets/skills/nextjs.png";
 import github from "../public/assets/skills/github.png";
+import git from "../public/assets/skills/git.png";
 import solidity from "../public/assets/skills/solidity.png";
 import hardhat from "../public/assets/skills/hardhat.png";
 import ethers_js_blue from "../public/assets/skills/ethers_js_blue.png";
@@ -61,7 +62,7 @@ const web2 = [
     level: "Beginner",
   },
   {
-    skillIcon: github,
+    skillIcon: git,
     skillName: "Git",
     level: "Intermediate",
   },
@@ -107,17 +108,17 @@ const renderSkills = (skills, level) => (
                 />
               </div>
               <div className="flex text-gray-600 dark:text-[#ccc] flex-col itmes-center justify-center">
-                <h3 className="text-transparent bg-clip-text bg-gradient-to-tl from-purple-800 to-rose-800 dark:text-fuchsia-600 drop-shadow-lg">
+                <h3 className="text-transparent bg-clip-text bg-gradient-to-t from-[#666] to-[#222] dark:text-[#bbb] drop-shadow-lg">
                   {skill.skillName}
                 </h3>
               </div>
             </div>
             <small
-              className="text-center shadow-sm text-gray-500 bg-blue-100 dark:text-gray-800 p-1 px-2 rounded"
+              className="text-center shadow-sm text-gray-500 bg-blue-100 dark:text-gray-800 p-0 px-2 rounded"
               style={{
                 borderLeft:
                   skill.level === "Beginner"
-                    ? "2px solid #dcc400"
+                    ? "2px solid #f43f5e"
                     : skill.level === "Intermediate"
                     ? "2px solid #007672"
                     : "#FFE0FF",
@@ -129,13 +130,15 @@ const renderSkills = (skills, level) => (
                     : "#FFE0FF",
                 color:
                   skill.level === "Beginner"
-                    ? "#dcc400"
+                    ? "#f43f5e"
                     : skill.level === "Intermediate"
                     ? "#007672"
                     : "#FFE0FF",
               }}
             >
-              {skill.level}
+              <small className="drop-shadow-lg">
+                {skill.level}
+                </small> 
             </small>
           </div>
         </div>

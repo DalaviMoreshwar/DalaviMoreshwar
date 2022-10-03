@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-50 tracking-wide px-10 md:px-20 lg:px-35 font-inter dark:bg-gray-900 dark:text-gray-50">
+      <main className="bg-gradient-t from-[#fff] to-[#eee] tracking-wide px-10 md:px-20 lg:px-35 font-inter dark:bg-[#0f172a] dark:text-gray-50">
         {/* hero section start */}
         <section className="">
           <nav className="py-10 mb-12 flex justify-between">

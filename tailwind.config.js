@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: "inter"
-      }
+        inter: "open sans"
+      },
     },
   },
   plugins: [],
