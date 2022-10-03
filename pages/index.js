@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
 import { socials } from "../utils/content";
 import developer from "../public/developer.png";
 
 import { useState } from "react";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,21 +21,8 @@ export default function Home() {
       <main className="bg-gradient-t from-[#fff] to-[#eee] tracking-wide px-10 md:px-20 lg:px-35 font-inter dark:bg-[#0f172a] dark:text-gray-50">
         {/* hero section start */}
         <section className="">
-          <nav className="py-10 mb-12 flex justify-between">
-            <span></span>
-            {/* <h1 className='text-xl '>Portfolio</h1> */}
-            <ul>
-              <li>
-                <span onClick={() => setDarkMode(!darkMode)}>
-                  {darkMode ? (
-                    <BsSunFill className="rounded-full shadow-md shadow-purple-400 cursor-pointer hover:scale-105 ease-in duration-300 text-4xl p-2" />
-                  ) : (
-                    <BsFillMoonFill className="rounded-full shadow-md shadow-purple-400 cursor-pointer hover:scale-105 ease-in duration-300 text-4xl p-2" />
-                  )}
-                </span>
-              </li>
-            </ul>
-          </nav>
+
+          <Navbar darkMode={darkMode} setDarkMode={ setDarkMode} />      
 
           <div className="text-center p-5">
             <p className="uppercase tracking-widest dark:text-gray-400 text-gray-600">
