@@ -1,7 +1,23 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+import { BsDownload } from 'react-icons/bs'
 import developer from "../public/developer.png";
 
 const Hero = () => {
+  const downloadPDF = () => {
+    // using Java Script method to get PDF file
+    fetch('Moreshwar_Dalvi_Resume_2022.pdf').then(response => {
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'Moreshwar_Dalvi_Resume_2022.pdf';
+        alink.click();
+      })
+    })
+  };
   return (
     <>
       <div className="text-center p-5">
@@ -21,11 +37,19 @@ const Hero = () => {
           Web 2.0 + 1.0;
         </code>
         <p className="text-md  leading-7 pt-5 text-gray-700 dark:text-gray-400">
-          I&apos;m a front-end developer specializing in building
-          exceptional degital experiences. <br /> Currently, I&apos;m
-          focusing on building responsive and fully functional front-end web
-          applications while learning web 3.0 technologies.
+          I&apos;m a front-end developer specializing in building exceptional
+          degital experiences. <br /> Currently, I&apos;m focusing on building
+          responsive and fully functional front-end web applications while
+          learning web 3.0 technologies.
         </p>
+
+
+        <div className="flex justify-center">
+          
+          <span onClick={downloadPDF} className="cursor-pointer bg-gradient-to-br from-sky-600 to-rose-600 p-2 shadow-lg my-5 mx-4 rounded-lg text-white flex">
+            <span>Get My Resume</span> <BsDownload className="ml-3 mt-1" />
+          </span>
+        </div>
       </div>
       {/* image section start */}
       <div className="mx-auto bg-gradient-to-tr from-purple-700 to-rose-400 rounded-full w-80 h-80 relative overflow-hidden md:h-60 md:w-60">
@@ -38,7 +62,7 @@ const Hero = () => {
       </div>
       {/* image section end */}
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
