@@ -33,12 +33,12 @@ const Hero = () => {
         <h3 className="text-2xl py-2 text-gray-800 dark:text-gray-200">
           a Developer 🧑‍💻
         </h3>
-        <code className="text-xl bg-slate-200 p-3 rounded py-1 text-gray-800">
+        <code className="text-xl bg-[#eee] p-3 rounded shadow-inner py-1 text-gray-800">
           Web 2.0 + 1.0;
         </code>
         <p className="text-md  leading-7 pt-5 text-gray-700 dark:text-gray-400">
           I&apos;m a front-end developer specializing in building exceptional
-          degital experiences. <br /> Currently, I&apos;m focusing on building
+          digital experiences. <br /> Currently, I&apos;m focusing on building
           responsive and fully functional front-end web applications while
           learning web 3.0 technologies.
         </p>
@@ -46,7 +46,7 @@ const Hero = () => {
 
         <div className="flex justify-center">
           
-          <span onClick={downloadPDF} className="cursor-pointer bg-gradient-to-br from-sky-600 to-rose-600 p-2 shadow-lg my-5 mx-4 rounded-lg text-white flex">
+          <span onClick={downloadPDF} className="cursor-pointer bg-gradient-to-br from-sky-600 to-rose-600 p-2 shadow-inner my-5 mx-4 rounded-lg text-white flex">
             <span>Get My Resume</span> <BsDownload className="ml-3 mt-1" />
           </span>
         </div>
