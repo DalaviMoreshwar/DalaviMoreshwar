@@ -25,6 +25,18 @@ const Projects = () => {
                   src={project.bgImg}
                   alt={project.title}
                 />
+                <span className="px-2 text-sm text-gray-800 shadow-inner rounded-md bg-gradient-to-tr from-[#fff] to-[#eee]"
+                  style={{
+                    borderBottom:
+                      project.web === "Web 3.0"
+                        ? "2px solid #f43f5e"
+                        : "2px solid #007672",
+                    fontFamily: "Consolas",
+                    fontSize: "15px"
+                  }}
+                >
+                  {project.web}
+                </span>
                 <div className="p-3">
                   <h3 className="text-lg text-center font-medium pb-3 text-purple-500">
                     {project.title}
@@ -51,8 +63,8 @@ const Projects = () => {
                   </div>
 
                   {/* <hr className="my-3 h-px bg-gray-200 border-0 dark:bg-gray-700" /> */}
-                  
-                    {/* {project.tags.map((tag, index) => (
+
+                  {/* {project.tags.map((tag, index) => (
                       <div key={index} className="row-span-3 col-span-2">
                         <code className="bg-[#F1F7F7] border p-1 text-sm  rounded  text-gray-800">
                           {tag}

@@ -114,7 +114,7 @@ const renderSkills = (skills, level) => (
               </div>
             </div>
             <small
-              className="text-center shadow-sm text-gray-500 bg-blue-100 dark:text-gray-800 p-0 px-2 rounded"
+              className="text-center shadow-sm text-gray-500 bg-blue-100 dark:text-gray-800 font-bold p-1 px-2 rounded"
               style={{
                 borderLeft:
                   skill.level === "Beginner"
@@ -134,6 +134,7 @@ const renderSkills = (skills, level) => (
                     : skill.level === "Intermediate"
                     ? "#007672"
                     : "#FFE0FF",
+                fontFamily: "Consolas"
               }}
             >
               <small className="drop-shadow-lg">

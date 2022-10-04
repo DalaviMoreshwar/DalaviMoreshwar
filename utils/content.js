@@ -30,6 +30,7 @@ export const socials = [
 export const projectsDetails = [
   {
     id: 1,
+    web: "Web 3.0",
     title: "Crypto Transfer App",
     description: "Modern and Real World Web 3.0 Blockchain Application. Full fledge Web 3.0 application that allows users to send ETH transactions through the Blockchain.",
     bgImg: crypotTransfer,
@@ -47,6 +48,7 @@ export const projectsDetails = [
   },
   {
     id: 2,
+    web: "Web 2.0",
     title: "Crypto Currency Dashboard - 1",
     description: "Integration of an API provided by CoinGecko. Display information about Bitcoin available in market place.",
     bgImg: crypotDash_1,
@@ -62,6 +64,7 @@ export const projectsDetails = [
   },
   {
     id: 3,
+    web: "Web 2.0",
     title: "Crypto Currency Dashboard - 2",
     description: "Integration of an API provided by CoinGecko. Display information about Bitcoin available in market place.",
     bgImg: crypotDash_2,

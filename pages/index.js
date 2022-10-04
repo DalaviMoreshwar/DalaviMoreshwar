@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gradient-t from-[#fff] to-[#eee] tracking-wide px-10 md:px-20 lg:px-35 font-inter dark:bg-[#0f172a] dark:text-gray-50">
+      <main className="bg-gradient-t drop-shadow-lg from-[#fff] to-[#eee] tracking-wide px-10 md:px-20 lg:px-35 font-inter dark:bg-[#0f172a] dark:text-gray-50">
         {/* hero section start */}
         <section className="">
 
