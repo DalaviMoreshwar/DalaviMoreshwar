@@ -7,7 +7,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <>
       <nav className="py-10 mb-12 flex justify-between">
         <span></span>
-        {/* <h1 className='text-xl '>Portfolio</h1> */}
+        {/* <h1 className='text-xl '>Moreshwar.</h1> */}
         <ul>
           <li>
             <span onClick={() => setDarkMode(!darkMode)}>
