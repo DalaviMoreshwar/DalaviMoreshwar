@@ -6,6 +6,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { experiences } from "@/utils";
 import { Badge } from "./ui/badge";
 import SectionTitle from "./SectionTitle";
+import Link from "next/link";
 
 export default function Experiences() {
   return (
@@ -26,9 +27,11 @@ export default function Experiences() {
           >
             <div className="flex justify-between">
               <div className="space-y-1">
-                <p className="text-cyan-700 font-semibold dark:text-cyan-500">
-                  {exp.company}
-                </p>
+                <Link href={exp.link} target="_blank">
+                  <p className="text-cyan-700 font-semibold dark:text-cyan-500">
+                    {exp.company}
+                  </p>
+                </Link>
                 <h6 className="bg-linear-to-br text-slate-700 dark:text-slate-200">
                   {exp.role}
                 </h6>

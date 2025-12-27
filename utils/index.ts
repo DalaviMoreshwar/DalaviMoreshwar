@@ -4,6 +4,7 @@ interface Experiences {
   toDate: string;
   company: string;
   role: string;
+  link: string;
   description: string;
   techStack: string[];
 }
@@ -16,6 +17,7 @@ export const experiences: Experiences[] = [
     company: "Dot Logic Web Solutions Private Limited",
     role: "Software Developer",
     description: "",
+    link: "https://www.dotweb.in/",
     techStack: ["HTML", "PHP", "AngularJS"],
   },
   {
@@ -25,6 +27,7 @@ export const experiences: Experiences[] = [
     company: "Infoworld Technologies Pvt. Ltd.",
     role: "Hybrid Mobile Application Developer",
     description: "",
+    link: "https://infoworldindia.com/",
     techStack: ["Angular v2", "Ionic Framework"],
   },
   {
@@ -34,6 +37,7 @@ export const experiences: Experiences[] = [
     company: "BiCS Infotech pvt. ltd.",
     role: "FullStack Developer",
     description: "",
+    link: "https://www.bicsinfotech.com/",
     techStack: ["ReactJs", "NodeJs", "MySQL"],
   },
   {
@@ -43,6 +47,7 @@ export const experiences: Experiences[] = [
     company: "Acclivis Technologies Pvt Ltd",
     role: "Frontend Developer",
     description: "",
+    link: "https://acclivistech.com/",
     techStack: ["ReactJs", "NodeJs", "Redux"],
   },
   {
@@ -52,6 +57,7 @@ export const experiences: Experiences[] = [
     company: "Capgemini",
     role: "Senior Consultant & Application Developer",
     description: "",
+    link: "https://www.capgemini.com/",
     techStack: [
       "ReactJs",
       "TypeScript",
