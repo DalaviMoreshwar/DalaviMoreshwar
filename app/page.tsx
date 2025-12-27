@@ -20,6 +20,7 @@ import { Download } from "lucide-react";
 import Experiences from "@/components/Experiences";
 import Education from "@/components/Education";
 import TechStack from "@/components/TechStack";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -164,6 +165,8 @@ export default function Home() {
           </motion.div>
 
           <TechStack />
+
+          <Projects />
 
           <Experiences />
 
