@@ -23,7 +23,7 @@ export default function Experiences() {
         .map((exp) => (
           <div
             key={exp.id}
-            className="space-y-2.5 bg-linear-to-bl from-neutral-100 dark:bg-linear-to-bl dark:from-neutral-950 dark:to-neutral-900 p-3 rounded-xl"
+            className="space-y-2.5 bg-linear-to-bl from-stone-100 dark:bg-linear-to-bl dark:from-neutral-950 dark:to-neutral-900 p-3 rounded-xl"
           >
             <div className="flex justify-between">
               <div className="space-y-1">
@@ -31,11 +31,11 @@ export default function Experiences() {
                   {exp.fromDate} - {exp.toDate}
                 </p>
                 <Link href={exp.link} target="_blank">
-                  <p className="text-cyan-700 font-semibold dark:text-cyan-500">
+                  <p className="bg-linear-to-br from-stone-400 to-neutral-800 dark:to-neutral-700 bg-clip-text text-transparent font-semibold">
                     {exp.company}
                   </p>
                 </Link>
-                <p className="bg-linear-to-br text-sm text-slate-700 dark:text-slate-200">
+                <p className="bg-linear-to-br text-sm text-stone-700 dark:text-stone-200">
                   {exp.role}
                 </p>
               </div>
@@ -43,7 +43,7 @@ export default function Experiences() {
                 {exp.fromDate} - {exp.toDate}
               </p>
             </div>
-            <p className="text-slate-500 dark:text-slate-500 text-sm">
+            <p className="text-stone-400 text-sm">
               {exp.description} Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Debitis architecto ratione nihil atque veniam ex
               officiis vero quod eaque animi!

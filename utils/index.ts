@@ -9,6 +9,16 @@ interface Experiences {
   techStack: string[];
 }
 
+interface Education {
+  institute: string;
+  degree: string;
+  fieldOfStudy: string;
+  startDate: string;
+  endDate: string;
+  link: string;
+  grade: string;
+}
+
 export const experiences: Experiences[] = [
   {
     id: 1,
@@ -71,11 +81,12 @@ export const experiences: Experiences[] = [
   },
 ];
 
-export const education = {
+export const education: Education = {
   institute: "DKTE'S Textile and Engineering Institute",
   degree: "Bachelor of Engineering - BE",
   fieldOfStudy: "Computer Science & Engineering",
   startDate: "June 2011",
   endDate: "12 July 2016",
   link: "https://www.dkte.ac.in/index.php",
+  grade: "63.73%",
 };
