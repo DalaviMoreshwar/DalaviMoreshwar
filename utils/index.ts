@@ -72,11 +72,10 @@ export const experiences: Experiences[] = [
 ];
 
 export const education = {
-  institute:
-    "DKTE'S Textile and Engineering Institute - An Empowered Autonomous Institute",
+  institute: "DKTE'S Textile and Engineering Institute",
   degree: "Bachelor of Engineering - BE",
-  fieldOfStudy: "Computer Science",
+  fieldOfStudy: "Computer Science & Engineering",
   startDate: "June 2011",
   endDate: "12 July 2016",
-  logo: "",
+  link: "https://www.dkte.ac.in/index.php",
 };
