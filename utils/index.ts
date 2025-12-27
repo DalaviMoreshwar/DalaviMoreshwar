@@ -12,8 +12,8 @@ interface Experiences {
 export const experiences: Experiences[] = [
   {
     id: 1,
-    fromDate: "September 2016",
-    toDate: "May 2018",
+    fromDate: "15 Oct 2016",
+    toDate: "30 Apr 2018",
     company: "Dot Logic Web Solutions Private Limited",
     role: "Software Developer",
     description: "",
@@ -22,8 +22,8 @@ export const experiences: Experiences[] = [
   },
   {
     id: 2,
-    fromDate: "May 2018",
-    toDate: "July 2019",
+    fromDate: "2 May 2018",
+    toDate: "19 Jul 2019",
     company: "Infoworld Technologies Pvt. Ltd.",
     role: "Hybrid Mobile Application Developer",
     description: "",
@@ -32,8 +32,8 @@ export const experiences: Experiences[] = [
   },
   {
     id: 3,
-    fromDate: "June 2019",
-    toDate: "September 2020",
+    fromDate: "1 Jul 2019",
+    toDate: "7 Aug 2020",
     company: "BiCS Infotech pvt. ltd.",
     role: "FullStack Developer",
     description: "",
@@ -42,8 +42,8 @@ export const experiences: Experiences[] = [
   },
   {
     id: 4,
-    fromDate: "September 2020",
-    toDate: "November 2022",
+    fromDate: "2 Sept 2020",
+    toDate: "16 Nov 2022",
     company: "Acclivis Technologies Pvt Ltd",
     role: "Frontend Developer",
     description: "",
@@ -52,7 +52,7 @@ export const experiences: Experiences[] = [
   },
   {
     id: 5,
-    fromDate: "November 2022",
+    fromDate: "23 Nov 2022",
     toDate: "Present",
     company: "Capgemini",
     role: "Senior Consultant & Application Developer",

@@ -27,16 +27,19 @@ export default function Experiences() {
           >
             <div className="flex justify-between">
               <div className="space-y-1">
+                <p className="font-thin text-xs md:hidden uppercase text-zinc-500 font-stretch-100%">
+                  {exp.fromDate} - {exp.toDate}
+                </p>
                 <Link href={exp.link} target="_blank">
                   <p className="text-cyan-700 font-semibold dark:text-cyan-500">
                     {exp.company}
                   </p>
                 </Link>
-                <h6 className="bg-linear-to-br text-slate-700 dark:text-slate-200">
+                <p className="bg-linear-to-br text-sm text-slate-700 dark:text-slate-200">
                   {exp.role}
-                </h6>
+                </p>
               </div>
-              <p className="text-xs uppercase text-zinc-500 font-stretch-100%">
+              <p className="font-thin text-xs sr-only sm:not-sr-only text-zinc-500 font-stretch-100%">
                 {exp.fromDate} - {exp.toDate}
               </p>
             </div>
