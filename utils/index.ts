@@ -1,3 +1,6 @@
+import { StaticImageData } from "next/image";
+import summarizeArticlesImg from "@/public/project/summarize-articles.png";
+
 interface Experiences {
   id: number;
   fromDate: string;
@@ -17,6 +20,16 @@ interface Education {
   endDate: string;
   link: string;
   grade: string;
+}
+
+interface Projects {
+  id: number;
+  name: string;
+  techStack: string[];
+  webLink: string;
+  githubLink: string;
+  description: string;
+  image: StaticImageData;
 }
 
 export const experiences: Experiences[] = [
@@ -90,3 +103,15 @@ export const education: Education = {
   link: "https://www.dkte.ac.in/index.php",
   grade: "63.73%",
 };
+
+export const projects: Projects[] = [
+  {
+    id: 1,
+    name: "Summarize Articles with OpenAI GPT- 4",
+    techStack: ["ReactJS", "Redux", "TailwindCSS", "Rapid API"],
+    webLink: "https://ai-summerize-project.vercel.app/",
+    githubLink: "https://github.com/DalviMoreshwar/ai-summerize-project",
+    description: "Somthing",
+    image: summarizeArticlesImg,
+  },
+];

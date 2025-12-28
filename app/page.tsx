@@ -61,25 +61,31 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="space-y-3"
           >
-            <h2 className="text-lg font-semibold text-zinc-700 dark:text-zinc-100">
-              Building scalable solutions for the future!
-            </h2>
-            <p className="text-zinc-600 text-sm dark:text-zinc-400 max-w-2xl">
+            <p className="text-stone-600 text-sm dark:text-stone-400 max-w-2xl">
               Specialize in{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">React.js</span>
+              <span className="text-stone-950 dark:text-stone-300">
+                React.js
+              </span>
               , and{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">
+              <span className="text-stone-950 dark:text-stone-300">
                 TypeScript
               </span>
               , with hands-on experience using{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">Node.js</span>,{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">Rest-API</span>
+              <span className="text-stone-950 dark:text-stone-300">
+                Node.js
+              </span>
+              ,{" "}
+              <span className="text-stone-950 dark:text-stone-300">
+                Rest-API
+              </span>
               , &amp;{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">Graph QL</span>{" "}
+              <span className="text-stone-950 dark:text-stone-300">
+                Graph QL
+              </span>{" "}
               to support full-stack workflows.
             </p>
 
-            <p className="text-zinc-600 text-sm dark:text-zinc-400 max-w-2xl">
+            <p className="text-stone-600 text-sm dark:text-stone-400">
               I&apos;m passionate about crafting clean, intuitive UI/UX,
               building reusable component systems, and delivering fast, reliable
               single-page applications. Comfortable working in Agile
@@ -87,17 +93,23 @@ export default function Home() {
               complex problems with elegant solutions.
             </p>
 
-            <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+            <p className="text-stone-600 dark:text-stone-400 text-sm">
               Beyond frontend developer, I am passionate about{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">
+              <span className="text-stone-950 dark:text-stone-300">
                 AWS Cloud
               </span>
               ,{" "}
-              <span className="text-zinc-950 dark:text-zinc-200">
+              <span className="text-stone-950 dark:text-stone-300">
                 Docker &amp; Kubernetes
               </span>{" "}
               and building resilent systems that can scale effectively while
               maintaining high availability and performance.
+            </p>
+
+            <p className="text-sm font-semibold text-stone-700 dark:text-stone-400">
+              I believe every digital experience deserves to be exceptional, and
+              that&apos;s what drives me to build responsive and functional web
+              applications.
             </p>
           </motion.div>
 
