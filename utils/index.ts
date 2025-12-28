@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
+
 import summarizeArticlesImg from "@/public/project/summarize-articles.png";
+import cryptoTransferImg from "@/public/project/crypto-transfer.png";
 
 interface Experiences {
   id: number;
@@ -107,7 +109,25 @@ export const education: Education = {
 export const projects: Projects[] = [
   {
     id: 1,
-    name: "Summarize Articles with OpenAI GPT- 4",
+    name: "Crypto Transfer",
+    techStack: [
+      "ReactJS",
+      "TailwindCSS",
+      "Solidity",
+      "Ethers JS",
+      "Hardhat",
+      "Alchemy",
+      "Blockchain",
+      "Metamask",
+    ],
+    webLink: "https://crypto-transfer-psi.vercel.app/",
+    githubLink: "https://github.com/DalaviMoreshwar/crypto-transfer",
+    description: "Somthing",
+    image: cryptoTransferImg,
+  },
+  {
+    id: 2,
+    name: "Summarize Articles: GPT-4",
     techStack: ["ReactJS", "Redux", "TailwindCSS", "Rapid API"],
     webLink: "https://ai-summerize-project.vercel.app/",
     githubLink: "https://github.com/DalviMoreshwar/ai-summerize-project",
