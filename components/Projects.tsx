@@ -6,7 +6,7 @@ import { FileCodeCorner, GitPullRequestArrow } from "lucide-react";
 import { projects } from "@/utils";
 import { Badge } from "./ui/badge";
 import SectionTitle from "./SectionTitle";
-import { Card, CardTitle, CardContent } from "./ui/card";
+import { Card, CardTitle, CardContent, CardHeader } from "./ui/card";
 
 export default function Projects() {
   return (
@@ -19,15 +19,7 @@ export default function Projects() {
             key={project.id}
             className="bg-gray-50 dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105"
           >
-            <CardContent className="p-3">
-              <Link href={project.webLink} target="_blank">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  className="cursor-pointer transition-all duration-500 hover:scale-105 mb-4"
-                />
-              </Link>
-
+            <CardHeader>
               <CardTitle>
                 <Link
                   href={project.githubLink}
@@ -38,6 +30,15 @@ export default function Projects() {
                   <FileCodeCorner className="text-neutral-400" />
                 </Link>
               </CardTitle>
+            </CardHeader>
+            <CardContent className="p-3">
+              <Link href={project.webLink} target="_blank">
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  className="cursor-pointer transition-all duration-500 hover:scale-105 mb-4"
+                />
+              </Link>
 
               <p className="mt-4 text-sm space-x-2 space-y-2">
                 {project.techStack.map((tech) => (
