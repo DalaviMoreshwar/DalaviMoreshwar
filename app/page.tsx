@@ -25,7 +25,7 @@ import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
-      <div className="mx-auto max-w-2xl px-4 py-15">
+      <div className="mx-auto max-w-3xl px-4 py-15">
         <motion.header
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
