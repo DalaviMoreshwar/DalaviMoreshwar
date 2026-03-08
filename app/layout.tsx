@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Figtree, Bricolage_Grotesque, Geist_Mono } from "next/font/google";
+import {
+  Figtree,
+  Bricolage_Grotesque,
+  Geist_Mono,
+  Montserrat,
+} from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -9,7 +14,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
   display: "swap",
 });
 
-const figtree = Figtree({
+const figtree = Montserrat({
   variable: "--font-figtree",
   subsets: ["latin"],
   display: "swap",
