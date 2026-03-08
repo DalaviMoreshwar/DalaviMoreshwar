@@ -79,7 +79,7 @@ export const experiences: Experiences[] = [
     id: 5,
     fromDate: "23 Nov 2022",
     toDate: "Present",
-    company: "Capgemini",
+    company: "Capgemini, India",
     role: "Senior Consultant & Application Developer",
     description: "",
     link: "https://www.capgemini.com/",

@@ -7,6 +7,7 @@ import { projects } from "@/utils";
 import { Badge } from "./ui/badge";
 import SectionTitle from "./SectionTitle";
 import { Card, CardTitle, CardContent, CardHeader } from "./ui/card";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 export default function Projects() {
   return (
@@ -27,7 +28,14 @@ export default function Projects() {
                   className="flex items-center justify-between gap-2"
                 >
                   <span>{project.name}</span>
-                  <FileCodeCorner className="text-neutral-400" />
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <FileCodeCorner className="text-neutral-400" />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Codebase on Github</p>
+                    </TooltipContent>
+                  </Tooltip>
                 </Link>
               </CardTitle>
             </CardHeader>

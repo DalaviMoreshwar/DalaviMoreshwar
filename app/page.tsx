@@ -14,7 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import ThemeToggle from "@/components/ui/theme-toggle";
-import profile from "@/public/profile.png";
+import profile from "@/public/profile02.jpg";
 import Intro from "@/components/Intro";
 import { Download } from "lucide-react";
 import Experiences from "@/components/Experiences";
@@ -32,7 +32,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="flex items-center justify-between mb-3"
         >
-          <div className="w-30 h-30 rounded overflow-hidden">
+          <div className="w-45 h-45 rounded overflow-hidden">
             <Image
               src={profile}
               alt="profile"
@@ -61,7 +61,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="space-y-3"
           >
-            <p className="text-stone-600 text-sm dark:text-stone-400 max-w-2xl">
+            <p className="text-stone-600 text-md dark:text-stone-400 max-w-2xl">
               Specialize in{" "}
               <span className="text-stone-950 dark:text-stone-300">
                 React.js
@@ -85,7 +85,7 @@ export default function Home() {
               to support full-stack workflows.
             </p>
 
-            <p className="text-stone-600 text-sm dark:text-stone-400">
+            <p className="text-stone-600 text-md dark:text-stone-400">
               I&apos;m passionate about crafting clean, intuitive UI/UX,
               building reusable component systems, and delivering fast, reliable
               single-page applications. Comfortable working in Agile
@@ -93,7 +93,7 @@ export default function Home() {
               complex problems with elegant solutions.
             </p>
 
-            <p className="text-stone-600 dark:text-stone-400 text-sm">
+            <p className="text-stone-600 dark:text-stone-400 text-md">
               Beyond frontend developer, I am passionate about{" "}
               <span className="text-stone-950 dark:text-stone-300">
                 AWS Cloud
@@ -106,7 +106,7 @@ export default function Home() {
               maintaining high availability and performance.
             </p>
 
-            <p className="text-sm font-semibold text-stone-700 dark:text-stone-400">
+            <p className="text-md font-semibold text-stone-700 dark:text-stone-400">
               I believe every digital experience deserves to be exceptional, and
               that&apos;s what drives me to build responsive and functional web
               applications.

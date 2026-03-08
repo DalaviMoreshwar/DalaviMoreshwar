@@ -31,7 +31,7 @@ export default function Experiences() {
                   {exp.fromDate} - {exp.toDate}
                 </p>
                 <Link href={exp.link} target="_blank">
-                  <p className="bg-linear-to-br from-stone-400 to-neutral-800 dark:to-neutral-700 bg-clip-text text-transparent font-semibold">
+                  <p className="text-bold bg-linear-to-br from-stone-400 to-neutral-800 dark:to-neutral-700 bg-clip-text text-transparent font-semibold">
                     {exp.company}
                   </p>
                 </Link>
@@ -43,7 +43,7 @@ export default function Experiences() {
                 {exp.fromDate} - {exp.toDate}
               </p>
             </div>
-            <p className="text-stone-400 text-sm">
+            <p className="text-stone-400 text-md">
               {exp.description} Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Debitis architecto ratione nihil atque veniam ex
               officiis vero quod eaque animi!
