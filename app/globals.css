@@ -16,11 +16,6 @@ h6 {
   font-family: var(--font-bricolag), serif;
 }
 
-p,
-span {
-  font-size: 0rem;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
