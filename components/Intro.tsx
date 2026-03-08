@@ -19,7 +19,7 @@ export default function Intro() {
             <BadgeCheck className="text-blue-500 w-5 h-5 sm:w-6 sm:h-6" />
           </h1>
 
-          <p className="text-zinc-600 dark:text-zinc-400">
+          <p className="text-lg text-zinc-600  dark:text-zinc-400">
             Senior Consultant &amp; Application Developer
           </p>
         </div>
