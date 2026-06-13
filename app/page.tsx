@@ -14,7 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import ThemeToggle from "@/components/ui/theme-toggle";
-import profile from "@/public/profile02.jpg";
+import profile from "@/public/profile03.png";
 import Intro from "@/components/Intro";
 import { Download } from "lucide-react";
 import Experiences from "@/components/Experiences";

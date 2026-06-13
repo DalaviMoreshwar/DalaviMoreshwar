@@ -4,7 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  font-family: var(--font-figtree), sans-serif;
+  font-family: var(--font-exo2), sans-serif;
+  font-weight: 400;
 }
 
 h1,
@@ -13,7 +14,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-bricolag), serif;
+  font-family: var(--font-rajdhani);
+  letter-spacing: 0.15rem;
 }
 
 @theme inline {
