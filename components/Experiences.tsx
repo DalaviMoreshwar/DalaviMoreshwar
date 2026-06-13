@@ -43,11 +43,7 @@ export default function Experiences() {
                 {exp.fromDate} - {exp.toDate}
               </p>
             </div>
-            <p className="text-stone-400 text-md">
-              {exp.description} Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Debitis architecto ratione nihil atque veniam ex
-              officiis vero quod eaque animi!
-            </p>
+            <p className="text-stone-400 text-md">{exp.description}</p>
             <p className="text-zinc-600 dark:text-zinc-200 text-sm space-x-2 space-y-2">
               {exp.techStack.map((tech) => (
                 <Badge key={tech} variant="secondary">

@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
 import {
   Figtree,
-  Bricolage_Grotesque,
+  Rajdhani,
+  Exo_2,
   Geist_Mono,
   Montserrat,
 } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const bricolageGrotesque = Bricolage_Grotesque({
-  variable: "--font-bricolag",
+const rajdhani = Rajdhani({
+  variable: "--font-rajdhani",
   subsets: ["latin"],
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const figtree = Montserrat({
-  variable: "--font-figtree",
+const exo2 = Exo_2({
+  variable: "--font-exo2",
   subsets: ["latin"],
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -38,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${bricolageGrotesque.variable} ${figtree.variable} ${geistMono.variable} antialiased`}
+        className={`${exo2.variable} ${rajdhani.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           {children}
