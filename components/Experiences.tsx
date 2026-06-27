@@ -11,9 +11,11 @@ import Link from "next/link";
 export default function Experiences() {
   return (
     <motion.section
+      id="experience"
       initial={{ opacity: 0, y: 35 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
       className="space-y-8"
     >
       <SectionTitle title="Experiences" />
@@ -43,7 +45,7 @@ export default function Experiences() {
                 {exp.fromDate} - {exp.toDate}
               </p>
             </div>
-            <p className="text-stone-400 text-md">{exp.description}</p>
+            <div className="text-stone-400 text-md">{exp.description}</div>
             <p className="text-zinc-600 dark:text-zinc-200 text-sm space-x-2 space-y-2">
               {exp.techStack.map((tech) => (
                 <Badge key={tech} variant="secondary">

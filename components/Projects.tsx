@@ -1,7 +1,9 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { FileCodeCorner, GitPullRequestArrow } from "lucide-react";
+import { motion } from "framer-motion";
+import { FileCodeCorner } from "lucide-react";
 
 import { projects } from "@/utils";
 import { Badge } from "./ui/badge";
@@ -14,11 +16,19 @@ import {
   CardDescription,
 } from "./ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { TechTags } from "./TechTags";
 
 export default function Projects() {
   return (
-    <>
-      <SectionTitle title="Learnings..." />
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="space-y-8"
+    >
+      <SectionTitle title="Projects" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {projects.map((project) => (
@@ -58,22 +68,12 @@ export default function Projects() {
                   </TooltipContent>
                 </Tooltip>
               </Link>
-
-              <p className="mt-4 text-sm space-x-2 space-y-2">
-                {project.techStack.map((tech) => (
-                  <Badge
-                    key={tech}
-                    variant="secondary"
-                    className="text-zinc-600 dark:text-zinc-400 "
-                  >
-                    {tech}
-                  </Badge>
-                ))}
-              </p>
+              <p>{JSON.stringify(project.techStack)}</p>
+              <TechTags tags={project.techStack} />
             </CardContent>
           </Card>
         ))}
       </div>
-    </>
+    </motion.section>
   );
 }
