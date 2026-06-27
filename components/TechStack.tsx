@@ -44,9 +44,11 @@ export default function TechStack() {
   ];
   return (
     <motion.section
+      id="skills"
       initial={{ opacity: 0, y: 35 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
       className="space-y-8"
     >
       <SectionTitle title="Techstack" />

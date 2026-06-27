@@ -1,31 +1,25 @@
 import type { Metadata } from "next";
-import {
-  Figtree,
-  Rajdhani,
-  Exo_2,
-  Geist_Mono,
-  Montserrat,
-} from "next/font/google";
+import { Google_Sans, JetBrains_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const rajdhani = Rajdhani({
-  variable: "--font-rajdhani",
+const BodyFont = Google_Sans({
+  variable: "--font-google-sans",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+});
+
+const HeaderFont = Inter({
+  variable: "--font-header",
   subsets: ["latin"],
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const exo2 = Exo_2({
-  variable: "--font-exo2",
+const monospaceFont = JetBrains_Mono({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${exo2.variable} ${rajdhani.variable} ${geistMono.variable} antialiased`}
+        className={`${HeaderFont.variable} ${BodyFont.variable} ${monospaceFont.className} antialiased`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           {children}
