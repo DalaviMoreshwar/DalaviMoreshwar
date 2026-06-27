@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-200 dark:border-zinc-800 py-8 mt-20">
+    <footer className="border-t max-w-5xl mx-auto border-zinc-200 dark:border-zinc-800 py-8 mt-20">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
           &copy; {new Date().getFullYear()} Moreshwar Dalavi. All rights

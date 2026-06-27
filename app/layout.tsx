@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Google_Sans, JetBrains_Mono, Inter } from "next/font/google";
+import { Inter, JetBrains_Mono, Exo_2 } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const BodyFont = Google_Sans({
+const BodyFont = Exo_2({
   variable: "--font-google-sans",
   subsets: ["latin"],
   display: "swap",

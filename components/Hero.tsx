@@ -94,7 +94,7 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/5 mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 tracking-wide  border border-emerald-500/30 bg-emerald-500/5 mb-6"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -115,13 +115,13 @@ export default function Hero() {
               </div>
             </h1>
 
-            <span className="mt-7 sm:mt-4 text-2xl sm:text-xl md:text-2xl text-zinc-200 ">
+            <h3 className="mt-10 sm:mt-4 sm:text-xl md:text-2xl text-sm text-zinc-200 ">
               I craft{" "}
               <RotatingText
                 words={rotatingWords}
                 className="text-violet-400 font-bold"
               />
-            </span>
+            </h3>
 
             {/* <p className="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg text-zinc-400 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               I deliver business value through intuitive user experiences and
@@ -201,9 +201,9 @@ export default function Hero() {
                   ease: "easeInOut",
                 },
               }}
-              className="absolute -bottom-32 lg:-bottom-36 xl:-bottom-40 left-0 sm:-left-8 lg:-left-12 xl:-left-46 z-30 hidden md:block"
+              className="absolute -bottom-32 lg:-bottom-36 xl:-bottom-35 left-0 sm:-left-8 lg:-left-12 xl:-left-46 z-30 hidden md:block"
             >
-              <div className="bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 rounded-lg p-2 sm:p-3 shadow-2xl shadow-black/30 w-52 sm:w-56 lg:w-60 xl:w-95">
+              <div className="bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 rounded-sm p-2 sm:p-3 shadow-2xl shadow-black/30 w-52 sm:w-56 lg:w-60 xl:w-95">
                 <div className="flex items-center gap-1.5 mb-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
@@ -234,7 +234,7 @@ export default function Hero() {
               }}
               className="absolute -top-8 sm:-top-12 lg:-top-14 right-0 sm:-right-4 lg:-right-8 xl:-right-10 z-20 hidden md:block"
             >
-              <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-700 rounded-lg px-4 py-3 shadow-xl">
+              <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-700 px-4 py-3 shadow-xl">
                 <p className="text-xs text-zinc-400">Years of Experience</p>
                 <p className="text-2xl font-bold text-violet-600 dark:text-violet-400">
                   8+
@@ -244,21 +244,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20"
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <Link
-          href="#about"
-          className="flex flex-col items-center gap-1 text-zinc-400 hover:text-violet-500 transition-colors"
-        >
-          <span className="text-xs font-medium">Scroll</span>
-          <ChevronDown size={20} />
-        </Link>
-      </motion.div>
     </section>
   );
 }
