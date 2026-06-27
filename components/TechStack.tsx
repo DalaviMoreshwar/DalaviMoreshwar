@@ -16,6 +16,7 @@ import express from "@/public/tech-stack/express.svg";
 import kubernetes from "@/public/tech-stack/kubernetes.svg";
 import mongodb from "@/public/tech-stack/mongodb.svg";
 import node from "@/public/tech-stack/node.svg";
+import graphql from "@/public/tech-stack/graphql.svg";
 import posgress from "@/public/tech-stack/posgress.svg";
 import typescript from "@/public/tech-stack/typescript.svg";
 import zustand from "@/public/tech-stack/zustand.svg";
@@ -31,16 +32,17 @@ export default function TechStack() {
     { id: 3, img: zustand, name: "Zustand" },
     { id: 4, img: redux, name: "Redux" },
     { id: 5, img: node, name: "Node JS" },
-    { id: 6, img: express, name: "Express JS" },
-    { id: 7, img: next, name: "Next JS" },
-    { id: 8, img: redis, name: "Redis" },
-    { id: 9, img: antDesign, name: "Ant Design" },
-    { id: 10, img: materialui, name: "Material UI" },
-    { id: 11, img: tailwindcss, name: "Tailwind CSS" },
-    { id: 12, img: mongodb, name: "Mongodb" },
-    { id: 13, img: posgress, name: "Posgress" },
-    { id: 14, img: docker, name: "Docker" },
-    { id: 15, img: kubernetes, name: "Kubernetes" },
+    { id: 6, img: graphql, name: "GraphQL" },
+    { id: 7, img: express, name: "Express JS" },
+    { id: 8, img: next, name: "Next JS" },
+    { id: 9, img: redis, name: "Redis" },
+    { id: 10, img: antDesign, name: "Ant Design" },
+    { id: 11, img: materialui, name: "Material UI" },
+    { id: 12, img: tailwindcss, name: "Tailwind CSS" },
+    { id: 13, img: mongodb, name: "Mongodb" },
+    { id: 14, img: posgress, name: "Posgress" },
+    { id: 15, img: docker, name: "Docker" },
+    { id: 16, img: kubernetes, name: "Kubernetes" },
   ];
   return (
     <motion.section
@@ -53,26 +55,22 @@ export default function TechStack() {
     >
       <SectionTitle title="Techstack" />
 
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
         {stacks.map((stack) => (
           <Card
             key={stack.id}
-            className="w-fit bg-linear-to-r from-gray-50 to-zinc-100 dark:bg-linear-to-r dark:from-gray-900 dark:to-zinc-900 border-0"
+            className="flex items-center gap-3 bg-transparent border hover:border-zinc-600 hover:bg-zinc-900"
           >
-            <CardContent>
-              <Tooltip>
-                <TooltipTrigger>
-                  <Image
-                    src={stack.img}
-                    alt={stack.name}
-                    width={100}
-                    className="transition-transform duration-500 hover:scale-120 cursor-pointer"
-                  />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{stack.name}</p>
-                </TooltipContent>
-              </Tooltip>
+            <CardContent className="flex items-center gap-4">
+              <Image
+                src={stack.img}
+                alt={stack.name}
+                width={35}
+                className="transition-transform duration-500 hover:scale-120"
+              />
+              <pre className="font-mono font-medium uppercase text-zinc-500">
+                {stack.name}
+              </pre>
             </CardContent>
           </Card>
         ))}
