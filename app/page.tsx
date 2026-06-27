@@ -9,6 +9,7 @@ import Experiences from "@/components/Experiences";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -20,8 +21,10 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto  space-y-24 pb-16">
           <AboutMe />
-          <Projects />
+          <Separator />
           <TechStack />
+          <Separator />
+          <Projects />
           <Experiences />
           <Education />
           <Contact />

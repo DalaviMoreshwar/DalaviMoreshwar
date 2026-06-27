@@ -3,14 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  BadgeCheck,
   Download,
-  ChevronDown,
   Terminal,
   Code2,
   Braces,
   GitBranch,
   Layers,
+  SatelliteDish,
 } from "lucide-react";
 import { Button } from "./ui/button";
 import profile from "@/public/profile03.png";
@@ -80,7 +79,7 @@ export default function Hero() {
       ))}
 
       {/* Main Content */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-20 sm:py-24 md:py-0">
+      <div className="relative z-20 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-20 sm:py-24 md:py-0">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 lg:gap-12 xl:gap-16">
           {/* Left - Text Content */}
           <motion.div
@@ -100,7 +99,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex  rounded h-2 w-2 bg-emerald-500" />
               </span>
-              <span className="text-xs text-emerald-400 font-medium">
+              <span className="text-xs uppercase text-emerald-400 font-medium">
                 Available for opportunities
               </span>
             </motion.div>
@@ -139,7 +138,8 @@ export default function Hero() {
             >
               <Link href="#contact">
                 <Button className="w-full sm:w-auto rounded-md px-6 sm:px-8 py-4 sm:py-5 text-sm sm:text-base font-medium shadow-lg shadow-violet-500/20 bg-linear-to-r from-violet-600 to-cyan-600 hover:from-violet-800 hover:to-cyan-700 text-white border-0">
-                  Let&apos;s Talk
+                  <SatelliteDish size={18} />
+                  Let&apos;s Uplink
                 </Button>
               </Link>
 
@@ -153,7 +153,7 @@ export default function Hero() {
                   className="w-full sm:w-auto rounded-md px-5 sm:px-6 py-4 sm:py-5 text-sm sm:text-base gap-2 text-zinc-300 hover:bg-white/10"
                 >
                   <Download size={18} />
-                  Resume
+                  Downlink CV
                 </Button>
               </Link>
             </motion.div>
@@ -201,9 +201,9 @@ export default function Hero() {
                   ease: "easeInOut",
                 },
               }}
-              className="absolute -bottom-32 lg:-bottom-36 xl:-bottom-35 left-0 sm:-left-8 lg:-left-12 xl:-left-46 z-30 hidden md:block"
+              className="absolute -bottom-32 lg:-bottom-36 xl:-bottom-35 left-0 sm:-left-58 lg:-left-12 xl:-left-46 z-30 hidden md:block"
             >
-              <div className="bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 rounded-sm p-2 sm:p-3 shadow-2xl shadow-black/30 w-52 sm:w-56 lg:w-60 xl:w-95">
+              <div className="bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 rounded-sm p-2 sm:p-3 shadow-2xl shadow-black/30 w-52 sm:w-96 lg:w-60 xl:w-95">
                 <div className="flex items-center gap-1.5 mb-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
@@ -232,10 +232,12 @@ export default function Hero() {
                   ease: "easeInOut",
                 },
               }}
-              className="absolute -top-8 sm:-top-12 lg:-top-14 right-0 sm:-right-4 lg:-right-8 xl:-right-10 z-20 hidden md:block"
+              className="absolute -top-8 sm:-top-12 lg:-top-14 right-0 sm:-right-24 lg:-right-8 xl:-right-10 z-20 hidden md:block"
             >
               <div className="bg-zinc-900/80 backdrop-blur-sm border border-zinc-700 px-4 py-3 shadow-xl">
-                <p className="text-xs text-zinc-400">Years of Experience</p>
+                <p className="text-xs uppercase text-zinc-400">
+                  Years of Experience
+                </p>
                 <p className="text-2xl font-bold text-violet-600 dark:text-violet-400">
                   8+
                 </p>
