@@ -53,7 +53,7 @@ export default function AboutMe() {
           <span className="text-base sm:text-lg md:text-xl text-zinc-400 font-normal">
             About me,
           </span>
-          <div className="block sm:text-lg md:text-5xl ">
+          <div className="block xs:text-lg sm:text-2xl md:text-5xl ">
             Building scalable products with
           </div>
           <span className="inline-flex items-center justify-center bg-linear-to-br from-purple-400 to-rose-700 bg-clip-text  text-transparent leading-tight">

@@ -19,11 +19,9 @@ export default function Home() {
       <main>
         <Hero />
 
+        <TechStack />
         <AboutMe />
-        <Separator />
         <div className="max-w-5xl mx-auto  space-y-24 pb-16">
-          <TechStack />
-          <Separator />
           <Projects />
           <Experiences />
           <Education />
