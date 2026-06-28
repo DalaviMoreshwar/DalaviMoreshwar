@@ -1,17 +1,33 @@
 "use client";
 
-import { motion } from "framer-motion";
-import SectionTitle from "./SectionTitle";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import bgImg from "./../public/planet.jpg";
+import Image from "next/image";
+
+const sectionDetails = {
+  image: bgImg,
+  text: "I enjoy turning complex problems into simple, intuitive digital experiences. With strong frontend expertise and a business-first mindset, I build scalable applications that deliver real value.",
+};
 
 export default function AboutMe() {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  // Track scroll progress of this section
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  // Modern SaaS-like subtle parallax layers
+  const yText = useTransform(scrollYProgress, [0, 1], [50, -50]);
+  const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 1, 1]);
+
   return (
-    <motion.section
+    <section
       id="about"
-      initial={{ opacity: 0, y: 35 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="space-y-6"
+      ref={ref}
+      className="relative h-[120vh] overflow-hidden bg-linear-to-b from-neutral-950 via-neutral-900 to-black text-white"
     >
       {/* Background Image */}
       <Image
@@ -80,6 +96,34 @@ export default function AboutMe() {
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
+
+    // <motion.section
+    //   id="about"
+    //   initial={{ opacity: 0, y: 35 }}
+    //   whileInView={{ opacity: 1, y: 0 }}
+    //   viewport={{ once: true }}
+    //   transition={{ duration: 0.8 }}
+    //   className="space-y-6"
+    // >
+    //   {/* <SectionTitle title="About Me" /> */}
+
+    //   <div className="mt-30 space-y-5 text-[18px] tracking-wide text-zinc-500 leading-relaxed">
+    //     <p>
+    //       I enjoy turning complex problems into simple, intuitive digital
+    //       experiences. With strong frontend expertise and a business-first
+    //       mindset, I build scalable applications that deliver real value.
+    //     </p>
+    //     <p>
+    //       As a Senior Consultant – Application Developer at Capgemini, I’ve
+    //       worked on enterprise-grade solutions for clients like BMW Group and
+    //       Mercedes-Benz, managing large-scale data and critical systems.
+    //     </p>
+    //     <p>
+    //       I’m driven by continuous learning, knowledge sharing, and delivering
+    //       high-quality work that creates meaningful impact.
+    //     </p>
+    //   </div>
+    // </motion.section>
   );
 }
