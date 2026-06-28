@@ -19,11 +19,9 @@ export default function Home() {
       <main className="px-4 sm:px-6 mt-6 lg:px-8">
         <Hero />
 
+        <TechStack />
+        <AboutMe />
         <div className="max-w-5xl mx-auto  space-y-24 pb-16">
-          <AboutMe />
-          <Separator />
-          <TechStack />
-          <Separator />
           <Projects />
           <Experiences />
           <Education />
