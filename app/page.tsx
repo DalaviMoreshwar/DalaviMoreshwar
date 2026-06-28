@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
       <Navbar />
 
-      <main className="px-4 sm:px-6 mt-6 lg:px-8">
+      <main>
         <Hero />
 
         <TechStack />
