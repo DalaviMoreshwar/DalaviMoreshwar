@@ -44,7 +44,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-dvh flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden mx-8 sm:-mx-6 lg:-mx-8"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 z-0 bg-zinc-950 dark:bg-black">
@@ -100,7 +100,7 @@ export default function Hero() {
                 <span className="relative inline-flex  rounded h-2 w-2 bg-emerald-500" />
               </span>
               <span className="text-xs uppercase text-emerald-400 font-medium">
-                Open to opportunities
+                Available for opportunities
               </span>
             </motion.div>
 
@@ -203,7 +203,7 @@ export default function Hero() {
               }}
               className="absolute -bottom-32 lg:-bottom-36 xl:-bottom-35 left-0 sm:-left-58 lg:-left-12 xl:-left-46 z-30 hidden md:block"
             >
-              <div className="rounded-sm p-2 sm:p-3  backdrop-blur-md border border-white/20 shadow-xl w-52 sm:w-96 lg:w-60 xl:w-95">
+              <div className="bg-zinc-900 dark:bg-zinc-950 border border-zinc-700 rounded-sm p-2 sm:p-3 shadow-2xl shadow-black/30 w-52 sm:w-96 lg:w-60 xl:w-95">
                 <div className="flex items-center gap-1.5 mb-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
