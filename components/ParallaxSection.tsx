@@ -43,6 +43,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({
           <Image
             className="w-full h-[120%] bg-cover bg-center"
             src={backgroundImage}
+            alt="parallax-img"
           />
         </motion.div>
       )}
