@@ -1,80 +1,126 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ui/theme-toggle";
+import Link from "next/link";
 
 const navLinks = [
+  { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [active, setActive] = useState("");
+
+  // Track active section (scroll spy)
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navLinks.map((link) =>
+        document.querySelector(link.href),
+      );
+
+      const scrollPos = window.scrollY + 120;
+
+      sections.forEach((section, index) => {
+        if (
+          section &&
+          section.offsetTop <= scrollPos &&
+          section.offsetTop + section.offsetHeight > scrollPos
+        ) {
+          setActive(navLinks[index].href);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-black/80  border-zinc-200 dark:border-zinc-800">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-white/70 dark:bg-black/70 backdrop-blur-xl">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <a
-            href="#hero"
-            className="text-xl font-bold bg-linear-to-r from-cyan-500 via-violet-500 to-orange-500 bg-clip-text text-transparent"
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="text-lg font-semibold tracking-tight bg-gradient-to-r from-cyan-500 via-violet-500 to-orange-500 bg-clip-text text-transparent"
           >
             MD
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-            <ThemeToggle />
-          </div>
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => {
+              const isActive = active === link.href;
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-3 md:hidden">
-            <ThemeToggle />
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="text-zinc-600 dark:text-zinc-400"
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Nav */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-black"
-          >
-            <div className="px-4 py-4 space-y-3">
-              {navLinks.map((link) => (
+              return (
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+                  className={`relative text-sm transition-colors ${
+                    isActive
+                      ? "text-black dark:text-white"
+                      : "text-zinc-500 hover:text-zinc-900 dark:hover:text-white"
+                  }`}
                 >
                   {link.label}
+
+                  {/* Active underline */}
+                  {isActive && (
+                    <motion.span
+                      layoutId="activeNav"
+                      className="absolute -bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-500 via-violet-500 to-orange-500 rounded-full"
+                    />
+                  )}
                 </a>
-              ))}
+              );
+            })}
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="md:hidden text-zinc-600 dark:text-zinc-300"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Drawer */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden border-t border-white/10 bg-white/90 dark:bg-black/90 backdrop-blur-xl"
+          >
+            <div className="flex flex-col px-6 py-6 space-y-4">
+              {navLinks.map((link) => {
+                const isActive = active === link.href;
+
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`text-base transition ${
+                      isActive
+                        ? "text-black dark:text-white font-medium"
+                        : "text-zinc-500"
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         )}

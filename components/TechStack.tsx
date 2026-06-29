@@ -25,6 +25,7 @@ import next from "@/public/tech-stack/wnextjs.svg";
 import materialui from "@/public/tech-stack/material-ui.svg";
 import { Tooltip, TooltipContent } from "./ui/tooltip";
 import { TooltipTrigger } from "@radix-ui/react-tooltip";
+import ParticleGrid from "./ParticleGrid";
 
 const stacks = [
   { id: 1, img: react, name: "React JS" },
@@ -55,6 +56,9 @@ export default function TechStack() {
       id="skills"
       className="relative overflow-hidden sm:py-20 md:py-20 lg:py-50  bg-linear-to-b from-black via-slate-950 to-black"
     >
+      {/* Particals Grid */}
+      {/* <ParticleGrid /> */}
+
       {/* 🌌 Heading */}
       <motion.div
         initial={{ opacity: 0, y: 35 }}

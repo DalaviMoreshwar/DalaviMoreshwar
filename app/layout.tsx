@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Exo_2 } from "next/font/google";
+import { Inter, JetBrains_Mono, Google_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
-const BodyFont = Exo_2({
+const BodyFont = Inter({
   variable: "--font-google-sans",
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
 });
 
-const HeaderFont = Inter({
+const HeaderFont = Google_Sans({
   variable: "--font-header",
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const monospaceFont = JetBrains_Mono({
