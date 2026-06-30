@@ -20,8 +20,8 @@ export default function Navbar() {
   // Track active section (scroll spy)
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navLinks.map((link) =>
-        document.querySelector(link.href),
+      const sections = navLinks.map(
+        (link) => document.querySelector(link.href) as HTMLElement | null,
       );
 
       const scrollPos = window.scrollY + 120;
