@@ -8,8 +8,8 @@ import Link from "next/link";
 const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -48,7 +48,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-lg font-semibold tracking-tight bg-gradient-to-r from-cyan-500 via-violet-500 to-orange-500 bg-clip-text text-transparent"
+            className="text-lg font-semibold tracking-tight bg-linear-to-r from-cyan-500 via-violet-500 to-orange-500 bg-clip-text text-transparent"
           >
             MD
           </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
                   {isActive && (
                     <motion.span
                       layoutId="activeNav"
-                      className="absolute -bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-cyan-500 via-violet-500 to-orange-500 rounded-full"
+                      className="absolute -bottom-1 left-0 right-0 h-[2] bg-linear-to-r from-cyan-500 via-violet-500 to-orange-500 rounded-full"
                     />
                   )}
                 </a>

@@ -1,10 +1,7 @@
 "use client";
 
-import SectionTitle from "./SectionTitle";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "./ui/card";
 
 import react from "@/public/tech-stack/react.svg";
 import redis from "@/public/tech-stack/redis.svg";
@@ -23,8 +20,7 @@ import typescript from "@/public/tech-stack/typescript.svg";
 import zustand from "@/public/tech-stack/zustand.svg";
 import next from "@/public/tech-stack/wnextjs.svg";
 import materialui from "@/public/tech-stack/material-ui.svg";
-import { Tooltip, TooltipContent } from "./ui/tooltip";
-import { TooltipTrigger } from "@radix-ui/react-tooltip";
+
 import ParticleGrid from "./ParticleGrid";
 
 const stacks = [

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import bgImg from "./../public/planet.jpg";
 import Image from "next/image";
 import { BriefcaseBusiness, Scaling, Sparkles } from "lucide-react";

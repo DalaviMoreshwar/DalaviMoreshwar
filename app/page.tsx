@@ -21,9 +21,10 @@ export default function Home() {
 
         <TechStack />
         <AboutMe />
+        <Experiences />
         <Projects />
+
         <div className="max-w-5xl mx-auto  space-y-24 pb-16">
-          <Experiences />
           <Education />
           <Contact />
         </div>
